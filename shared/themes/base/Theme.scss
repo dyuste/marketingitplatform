@@ -1,0 +1,48 @@
+.inner-page-container.base-theme {
+	background-color: #ffffff;
+	h1 {
+	    font-family: sans-serif;
+		font-stretch: normal;
+		font-style: normal;
+		font-variant-caps: normal;
+		font-variant-ligatures: normal;
+		font-variant-numeric: normal;
+		font-weight: bold;
+	}
+	section.header {
+		width: 100%;
+		height: 80px;
+		background-color: #FFF;
+		color:  #20303c;
+		display: flex;
+		align-items: center;
+
+		h1 {
+			font-size: 2em;
+		}
+	}
+
+	section.content-section {
+		background-color: #fafafa;
+		color: #333;
+		display: flex;
+		align-items: center;
+
+		&.content-section-0 {
+			background-color: #000;
+			background-image: url('/static/assets/img/background/background1.webp');
+			background-origin: padding-box;
+			background-position-x: 50%;
+			background-position-y: 50%;
+			color:  #fafafa;
+			height: 80vh;
+
+			h1, h2 {
+			    text-transform: uppercase;
+			    font-weight: bold;
+			    font-size: 4em;
+			    font-family: roboto;
+			}
+		}
+	}
+}
