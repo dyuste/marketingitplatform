@@ -1,0 +1,65 @@
+html, body, #root {
+	width: 100%;
+	height: 100%;
+}
+
+.content-wrapper {
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	> * {
+		flex-grow: 0;
+	}
+
+	section.header {
+		position: relative;
+	}
+
+	section.app  {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: stretch;
+		overflow-x: hidden;
+		> * {
+			@include transition(all 0.5s ease);
+		}
+
+		section.sidebar {
+			@include transition(all 0.5s ease);
+			width: 220px;
+			min-width: 220px;
+			a .label {
+				@include transition(opacity 0.5s ease);	
+			}
+		}
+
+		section.content {
+			flex-grow: 1;
+		}
+
+		&.collapsed {
+			section.sidebar {
+				width: 64px;
+				min-width: 64px;
+				a .label {
+					opacity: 0;
+					width: 0;
+				}
+
+				&:hover {
+					width: 220px;
+					min-width: 220px;
+					a .label {
+						opacity: 1;
+						width: auto;
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,93 @@
+html,body,#root{
+	width: 100%; height:100%;
+}
+
+.inner-page-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    section.content-section {
+    	flex-grow: 1;
+    }    
+}
+
+.inner-page-container {
+	background-color: #ffffff;
+	font-size: 1.125em;
+	h1 {
+	    font-family: sans-serif;
+		font-stretch: normal;
+		font-style: normal;
+		font-variant-caps: normal;
+		font-variant-ligatures: normal;
+		font-variant-numeric: normal;
+		font-weight: bold;
+	}
+
+	section.content-section {
+		background-color: #fafafa;
+		color: #444;
+		display: flex;
+		align-items: center;
+    	padding: 14px 0;
+    	min-height: 260px;
+		position: relative;
+		-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+		&.even-section {
+			background-color: #e7e7e7;
+		}
+		&.content-section-0 {
+			padding: 0;
+			background-color: #000;
+			background-image: url('/static/assets/img/background/background-laptop-2.jpg');
+			background-origin: padding-box;
+		    background-position-x: 50%;
+		    background-position-y: 30%;
+		    color: #fff;
+		    height: calc(100vh - 64px);
+		    background-size: cover;
+
+			h1, h2 {
+			    font-size: 48px;
+			    font-weight: 100;
+			    line-height: 62px;
+			}
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+			-moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+			box-shadow: 0 0 20px rgba(0,0,0,0.8);
+			top: 50%;
+			bottom: 0;
+			left: 10px;
+			right: 10px;
+			-moz-border-radius: 100px / 10px;
+			border-radius: 100px / 10px;
+		}
+	}
+
+	.btn-cta {
+		font-size: 1em;
+	}
+
+	span.price {
+		font-size: 1.25em;
+		font-weight: 700;
+		span.currency {
+			font-size: 0.8em;
+			margin-left: 6px;
+		}
+		span.frequency {
+			font-size: 0.7em;
+			margin-left: 6px;
+		}
+	}
+}

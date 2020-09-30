@@ -1,0 +1,67 @@
+.home {
+	section.content-section-0 h4 {
+		margin: 15px;
+		font-style: italic;
+		font-family: serif;
+	}
+
+	section.content-section-1 {
+		background-image: url(/static/assets/img/background/background-white-bg-laptop-half-1.jpg);
+		background-size: auto 308px;
+		background-repeat: no-repeat;
+		min-height: 440px!important;
+		.container {
+			z-index: 1;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			right: auto;
+			top: auto;
+			min-height: 132px !important;
+			background-image: url(/static/assets/img/background/background-white-bg-laptop-half-2.jpg);
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			z-index: 0;
+			border-radius: 0;
+			@include box-shadow(none);
+		}
+	}
+
+	section.content-section-2 {
+		padding: 45px 0;
+	}
+}
+
+@media (max-width: 575px) {
+	.home {
+		section.content-section-1 {
+			background-size: auto 150px;
+			min-height: 550px!important;
+			&:after {
+				min-height: 80px !important;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.home {
+		section.content-section-1 {
+			background-size: auto 190px;
+			min-height: 550px!important;
+			&:after {
+				min-height: 80px !important;
+			}
+		}
+
+		section.content-section-2 {
+			.container {
+				max-width: 700px;
+			}
+		}
+	}
+}

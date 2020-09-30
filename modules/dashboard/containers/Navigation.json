@@ -1,0 +1,26 @@
+[
+	{
+		"name":"dashboard",
+		"title":"Dashboard",
+		"href":"/dashboard",
+		"icon": "laptop"
+	},
+	{
+		"name":"account",
+		"title":"Tu Cuenta",
+		"href":"/dashboard/account",
+		"icon": "person"
+	},
+	{
+		"name":"paymentPlan",
+		"title":"Plan de pagos",
+		"href":"/dashboard/payment-plan",
+		"icon": "list-rich"
+	},
+	{
+		"name":"credit",
+		"title":"Crédito",
+		"href":"/dashboard/credit",
+		"icon": "euro"
+	}
+]

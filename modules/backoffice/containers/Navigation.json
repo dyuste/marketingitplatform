@@ -1,0 +1,14 @@
+[
+	{
+		"name":"info",
+		"title":"Log Info",
+		"href":"/backoffice/info",
+		"icon": "laptop"
+	},
+	{
+		"name":"errors",
+		"title":"Log Errores",
+		"href":"/backoffice/errors",
+		"icon": "laptop"
+	}
+]

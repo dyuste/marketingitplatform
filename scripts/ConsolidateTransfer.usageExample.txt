@@ -1,0 +1,1 @@
+npm run consolidateTransfer -- --userId 28 --transferId 3 --amount 12
