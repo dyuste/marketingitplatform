@@ -1,0 +1,63 @@
+.offer-card {
+	margin-right: 14px;
+	&:last-of-type {
+		margin-right: 0;
+	}
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+		background: white;
+		border: none;
+		margin: 16px 16px 0 4px;
+		color: #333!important;
+	}
+	.card-body {
+		display: flex;
+		flex-direction: column;
+	}
+	.card-footer {
+		display: flex;
+		justify-content: flex-end;
+		background: white;
+		border: none;
+	}
+
+	p {
+		font-size: 0.9em;
+	}
+	ul {
+		list-style-type: none;
+		li {
+			color: #222;
+			display: flex;
+			span.oi {
+				margin-right: 14px;
+				&:empty:before {
+					color: #dd5347;
+				}
+			}
+			&.base-product {
+				display: flex;
+				flex-direction: row;
+				align-items: baseline;
+
+				.label {
+					color: #dd5347!important;
+					font-weight: 700;
+					font-size: 1.25em;
+					margin-right: 6px;
+				}
+				.oi {
+					font-size: 1.1em;
+				}
+			}
+		}
+	}
+	.btn-cta {
+		padding: 10px 22px;
+		text-transform: none;
+	}
+	.card-footer {
+		padding-top: 0;
+	}
+}

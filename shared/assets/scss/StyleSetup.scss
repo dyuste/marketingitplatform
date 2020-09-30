@@ -1,0 +1,68 @@
+@import 'FlexMixins';
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;       
+          box-shadow: $shadow;
+}
+
+@mixin box-border-shadow($color) {
+  border: 1px solid $color;
+  -webkit-box-shadow: 0 1px 6px $color;
+     -moz-box-shadow: 0 1px 6px $color;       
+          box-shadow: 0 1px 6px $color;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+$cta-color: #dd5347;
+$cta-color-light: #ed6357;
+$cta-color-complement: #fff;
+$shadow-color: rgba(0,0,0,0.2);
+$light-shadow-color: #CCCCCC;
+$dark-shadow-color: #999;
+$dark-shadow-color-complement: #fff;
+$background-color: #FFFFFF;
+$background-color-darker: #EEEEEE;
+$dark-text-color: #333;
+$text-color: #46403c;
+$link-color: #3171c9;
+
+$primary-color: #EEE;
+$secondary-color: #DDD;
+
+$primary-btn-color: #C93D30;
+$primary-btn-color-complement: #fff;
+$secondary-btn-color: #3171c9;
+$secondary-btn-color-complement: #fff;
+
+$accordion-header-color: #3171c9;
+$accordion-header-color-complement: #fff;
+$light-accordion-header-color: #b5d0f5;
+$light-accordion-header-color-complement: #fff;
+$accordion-border-color: #dfdfdf;
+
+$side-bar-color: #fff;
+$side-bar-color-complement: #333;
+$side-bar-color-light: #eee;
+
+$font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$caption-font-family:  'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$site-editor-priority-nav-bar-background: #FFFFFF;
+$site-editor-priority-nav-bar-color: #666;
+
+*:focus {
+    outline: 0 !important;
+}
+@import 'shared/assets/scss/CommonResources.scss';
