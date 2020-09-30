@@ -1,0 +1,141 @@
+[
+	{
+		"service_name": "home",
+		"module_path": "./modules/home",
+		"bindings": [
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/",
+				"action": "home",
+				"access": {"allow" : "all"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/account/login/",
+				"action": "login",
+				"access": {"allow" : "all"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/account/signup/",
+				"action": "signup",
+				"access": {"allow" : "all"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/account/reset-password/",
+				"action": "reset-password",
+				"access": {"allow" : "all"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/terms-and-conditions/",
+				"action": "terms-and-conditions",
+				"access": {"allow" : "all"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/cookies-usage/",
+				"action": "cookies-usage",
+				"access": {"allow" : "all"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/privacy/",
+				"action": "privacy",
+				"access": {"allow" : "all"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/atencion-al-cliente/",
+				"action": "clients",
+				"access": {"allow" : "all"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/asistencia-tecnica/",
+				"action": "support",
+				"access": {"allow" : "all"}
+			}
+		], 
+		"preloadedState": { },
+		"serverData": {	}
+	},
+	{
+		"service_name": "dashboard",
+		"module_path": "./modules/dashboard",
+		"bindings": [
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/dashboard/",
+				"action": "dashboard",
+				"access": {"allow" : "user"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/dashboard/site/:siteId",
+				"action": "editSite",
+				"access": { "allow" : "siteOwner"	}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/dashboard/payment-plan",
+				"action": "paymentPlan",
+				"access": {"allow" : "user"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/dashboard/credit",
+				"action": "credit",
+				"access": {"allow" : "user"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/dashboard/account",
+				"action": "account",
+				"access": {"allow" : "user"}
+			}
+		]
+	},
+	{
+		"service_name": "backoffice",
+		"module_path": "./modules/backoffice",
+		"bindings": [
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/backoffice/",
+				"action": "info",
+				"access": {"allow" : "admin"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/backoffice/info",
+				"action": "info",
+				"access": {"allow" : "admin"}
+			},
+			{
+				"type": "html",
+				"method": "get",
+				"http_all_route": "/backoffice/errors",
+				"action": "errors",
+				"access": {"allow" : "admin"}
+			}
+		]
+	}
+]

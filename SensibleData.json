@@ -1,0 +1,16 @@
+{
+	"enterprise": {
+		"trademark": "MarketingItPlatform",
+		"responsible": "dummy",
+		"responsibleId": "dummy",
+		"reclamationPostalAddress": "dummy",
+		"reclamationEmail": {"user": "atencion.al.cliente", "domain": "marketingitplatform.com"},
+		"clientAssistanceEmail": {"user": "atencion.al.cliente", "domain": "marketingitplatform.com"},
+		"supportEmail": {"user": "asistencia.tecnica", "domain": "marketingitplatform.com"}
+	},
+	"accounting": {
+		"incomesAccount": {
+			"iban": "dummy"
+		}
+	}
+}

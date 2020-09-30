@@ -1,0 +1,73 @@
+{
+  "name": "MarketingItPlatform",
+  "version": "1.1.0",
+  "description": "",
+  "main": "server/server.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_PATH=. BABEL_ENV=node NODE_ENV=production babel-node server/server.js --presets es2015,stage-3",
+    "build": "export NODE_PATH=. && webpack",
+    "consolidateTransfer": "NODE_PATH=. BABEL_ENV=node babel-node scripts/ConsolidateTransfer.js --presets es2015,stage-2",
+    "scheduleInstallmentsCron": "NODE_PATH=. BABEL_ENV=node babel-node scripts/ScheduleInstallmentsCron.js --presets es2015,stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyuste/webserver.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "react"
+  ],
+  "author": "David Yuste",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dyuste/webserver/issues"
+  },
+  "homepage": "https://github.com/dyuste/webserver#readme",
+  "dependencies": {
+    "abort-controller": "^1.0.2",
+    "aviator": "^0.6.6",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-require-ignore": "^0.1.1",
+    "bootstrap": "^4.1.0",
+    "client-sessions": "^0.8.0",
+    "cookie-parser": "^1.4.3",
+    "css-loader": "^0.28.11",
+    "draft-js-toolbars": "0.0.1",
+    "express": "^4.16.3",
+    "html2plaintext": "^2.1.0",
+    "ignore-loader": "^0.1.2",
+    "jimp": "^0.2.28",
+    "jquery": "^3.3.1",
+    "moment": "^2.22.2",
+    "multer": "^1.3.0",
+    "mysql": "^2.15.0",
+    "node-sass": "^4.8.3",
+    "nodemailer": "^4.6.8",
+    "popper": "^1.0.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-quill": "^1.3.1",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "style-loader": "^0.20.3",
+    "vhost": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "webpack": "^3.10.0"
+  }
+}
